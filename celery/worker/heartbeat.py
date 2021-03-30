@@ -58,4 +58,4 @@ class Heart:
             self.timer.cancel(self.tref)
             self.tref = None
         if self.eventer.enabled:
-            self._send('worker-offline', retry=False)
+            self._send('worker-offline')
